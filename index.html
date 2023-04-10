@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="public/img/favicon.ico"/>
     <link rel="stylesheet" href="./public/css/normalize.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
-    <title>TPO: Grupo 16</title>
+    <title>.16 - Web Design</title>
   </head>
   <body>
     <header class="bg-header">
@@ -16,35 +17,35 @@
             <a href="#"><img src="./public/img/logo.png" alt="Logo">
             </a>
           </div>
-          <div class="nav-button">
+          <div id="btnMenu" class="nav-button">
             <i class="fa-solid fa-bars"></i>
           </div>
-          <div class="nav-bar">
-            <ul>
-              <li>
+          <div id="mnuNav" class="nav-bar">
+            <ul class="nav-list">
+              <li class="list-item">
                 <a href="#">Home</a>
               </li>
-              <li>
+              <li class="list-item">
                 <a href="#">Sobre nosotros</a>
               </li>
-              <li>
+              <li class="list-item dropdown">
                 <a href="">Servicios</a>
-                <ul>
-                  <li>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
                     <a href="">Servicios Web</a>
                   </li>
-                  <li>
+                  <li class="dropdown-item">
                     <a href="">Marketing Digital</a>
                   </li>
-                  <li>
+                  <li class="dropdown-item">
                     <a href="">Web Hosting</a>
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="list-item">
                 <a href="">Clientes</a>
               </li>
-              <li>
+              <li class="list-item">
                 <a href="">Contacto</a>
               </li>
             </ul>
@@ -67,5 +68,6 @@
       src="https://kit.fontawesome.com/2dbbc371d1.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./public/js/app.js"></script>
   </body>
 </html>
