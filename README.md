@@ -3,8 +3,8 @@
 Titulo de la página:
 ### Autores/integrantes
   - Bergmann Javier
-  - Campos alan
   - Herrera Hector
   - Rodriguez Diego
+  - Villarroel Diego
   
  
