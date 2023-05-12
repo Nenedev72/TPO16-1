@@ -41,6 +41,60 @@ body {
     width: 90%;
 }
 
+.title {
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.section-content {
+    padding: 2rem 0;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.box-content .box-img {
+    width: 50%;
+}
+
+.box-content .box-info {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+}
+
+.box-content .box-info p{
+    text-align: justify;
+}
+
+.box-img-1,
+.box-img-2,
+.box-img-3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 50%;
+    height: 25rem;
+}
+
+.box-img-1{
+    background-image: url(../img/Desarrollo-Web.jpg);
+}
+
+.box-img-2 {
+    background-image: url(../img/Marketing-Digital.jpg);
+}
+
+.box-img-3 {
+    background-image: url(../img/Hosting.jpg);
+}
+
 .bg-header {
     background-color: var(--color-gray-950);
 }
@@ -140,7 +194,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 3rem;
-    overflow: hidden; 
+    overflow: hidden;
     height: 0;
     transition: height .5s linear;
 }
@@ -149,7 +203,7 @@ body {
     height: 10rem;
 }
 
-.flex-spacebetween{
+.flex-spacebetween {
     display: flex;
     justify-content: space-between;
 }
@@ -169,7 +223,7 @@ body {
         flex-direction: row;
     }
 
-    .dropdown i{
+    .dropdown i {
         display: none;
     }
 }
@@ -193,7 +247,7 @@ body {
     .dropdown-menu {
         height: auto;
         display: flex;
-        overflow:visible;
+        overflow: visible;
         background-color: var(--color-white);
         left: -1rem;
         position: absolute;
@@ -208,7 +262,7 @@ body {
         transition: all 300ms ease;
     }
 
-    .list-item{
+    .list-item {
         border-bottom: 0px;
     }
 
@@ -220,7 +274,7 @@ body {
         background-size: 0% .3rem;
         transition: all 0.5s;
         padding-bottom: 1rem;
-        
+
     }
 
     .list-item>a:hover {
@@ -259,25 +313,50 @@ body {
     }
 }
 
-.main{
-    height: calc(100vh - 7rem);
-    background-image: url(../img/bg-main_01.jpg);
+.main {
+    /*height: calc(100vh - 7rem);*/
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/back_header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    animation-name: bg-image;
+    /*animation-name: bg-image;
     animation-duration: 30s; 
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-@keyframes bg-image{
-    0%{
+.main-content {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    color: white;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main-content h2,
+h3 {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.main-content h2 {
+    margin-left: 50px;
+}
+
+@keyframes bg-image {
+    0% {
         background-position: left
     }
 
-    100%{
+    100% {
         background-position: right;
     }
 }
